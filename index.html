@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Webpage</title>
+    <style>
+        h1 {font-size: 24px;
+            font-weight: bold;
+            color: #3f3f3f ;
+            float: left;
+            text-shadow:
+            1px 1px 0 #ffffff,
+            2px 1px 0 #ffffff,
+            2px  1px 0 #ffffff,
+            2px  1px 0 #ffffff;}
+        
+        body {font-family: Arial, sans-serif;
+              margin: 0;}
+        
+        .mission {color: #395701;
+                  margin-left: 20px;}
+        
+        .upcoming {color: #253900;
+                   text-align: center;}
+        
+        .contact {color: #000000;
+                  text-align: center;}
+        
+        #upcoming-events {background-color:#FFFFE0;}
+        
+        .section {background-color: #f8f3f3;
+                  padding: 10px;
+                  border-radius: 6px;
+                  margin-top: 10px;
+                  text-align: center;}
+
+        .outdoor {background-color: #AFEEEE;
+                  padding: 5px;
+                  border: 1px solid #B0E0E6;}
+       
+        .container {width: 80%;
+	                  margin: 0 auto;}
+
+        header {background: #11e450;}
+
+        header::after {content: '';
+                       display: table;
+                       clear: both;}
+
+        nav {float: right;}
+
+        nav ul {margin: 0;
+                padding: 0;
+                list-style: none;}
+
+        nav li {display: inline-block;
+                margin-left: 70px;
+                padding-top: 23px;
+                position: relative;}
+
+        nav a {color: #3f3f3f;
+               text-decoration: none;
+               text-transform: uppercase;
+               font-size: 14px;
+               font-family: 'Work Sans', sans-serif;
+               font-weight: 800;}
+
+        nav a:hover {color: #000000;}
+
+        nav a::before {content: '';
+                       display: block;
+                       height: 5px;
+                       background-color: #444;
+                       position: absolute;top: 0;width: 0%;
+                       transition: all ease-in-out 250ms;}
+
+        nav a:hover::before {width: 100%;}
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+      <h1>Sunnydale School</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <h2 class="mission">Mission Statement</h2>
+    <h2 class="upcoming" id="upcoming-events">Upcoming Events</h2>
+        <ul>
+            <li class="outdoor" data-event-type="outdoor" title="Event Type: outdoor">
+            Art Exhibition - <span class="event-date" style="font-weight:bold; color:red;">June 5</span>
+            </li><br>
+            <li data-event-type="indoor" title="Event Type: Indoor">
+            Foundation Day - <span class="event-date" style="font-weight:bold; color:red;">July 15</span>
+            </li><br>
+            <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+            Sports Fest - <span class="event-date" style="font-weight:bold; color:red;">August 20-25</span>
+            </li><br>
+            <li data-event-type="indoor" title="Event Type: Indoor">
+            Academic Awards - <span class="event-date" style="font-weight:bold; color:red;">September 10</span>
+            </li><br>
+            <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+            Christmas Party - <span class="event-date" style="font-weight:bold; color:red;">December 18</span>
+            </li>
+        </ul>   
+    <h2 class="contact">Contact Us</h2>
+    <div class="section">
+        <form>
+            <label for="email">Email:
+            <a href="mailto:mail@unida.edu.ph" title="Click to copy email" onclick="alert('Thanks for reaching out!')">mail@unida.edu.ph</a>
+            </label><br> <br>
+            <label for="name">Phone Number:
+            <a href="tel:+639219980368" title="Click to copy phone" onclick="alert('Thanks for reaching out!')">+639219980368</a>
+            </label>
+        </form> 
+        <!-- Imagine clicking here shows a message: 'Thanks for reaching out!' -->
+    </div> 
+</body>
+</html>
